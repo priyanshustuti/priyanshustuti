@@ -54,6 +54,37 @@
     });
   }
 
+  // Hero carousel
+  var slides = document.querySelectorAll('.slides img');
+  var dots = document.querySelectorAll('.dots button');
+  if (slides.length > 1) {
+    var cur = 0, timer, reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var frame = document.querySelector('.hero__frame');
+    var show = function (n) {
+      cur = (n + slides.length) % slides.length;
+      slides.forEach(function (s, i) { s.classList.toggle('on', i === cur); s.loading = 'eager'; });
+      dots.forEach(function (d, i) { d.classList.toggle('on', i === cur); d.setAttribute('aria-current', i === cur); });
+    };
+    var play = function () { if (!reduce) { clearInterval(timer); timer = setInterval(function () { show(cur + 1); }, 5000); } };
+    var stop = function () { clearInterval(timer); };
+    dots.forEach(function (d, i) { d.addEventListener('click', function () { show(i); play(); }); });
+    document.querySelector('.car-btn--prev').addEventListener('click', function () { show(cur - 1); play(); });
+    document.querySelector('.car-btn--next').addEventListener('click', function () { show(cur + 1); play(); });
+    frame.addEventListener('mouseenter', stop);
+    frame.addEventListener('mouseleave', play);
+    frame.addEventListener('focusin', stop);
+    frame.addEventListener('focusout', play);
+    var x0 = null;
+    frame.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    frame.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) { show(cur + (dx < 0 ? 1 : -1)); play(); }
+    });
+    document.addEventListener('visibilitychange', function () { if (document.hidden) { stop(); } else { play(); } });
+    show(0); play();
+  }
+
   // Enquiry form -> opens the visitor's email app (static site, no server)
   var form = document.getElementById('enquiry');
   if (form) {
