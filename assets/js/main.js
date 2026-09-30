@@ -149,7 +149,7 @@
     var vis = function () { return figs.filter(function (f) { return !f.classList.contains('hide'); }); };
     var open = function (i) {
       var v = vis(); idx = (i + v.length) % v.length;
-      var im = $('img', v[idx]); lbi.src = im.src; lbi.alt = im.alt; lb.classList.add('open');
+      var im = $('img', v[idx]); lbi.src = v[idx].getAttribute('data-full') || im.src; lbi.alt = im.alt; lb.classList.add('open');
     };
     figs.forEach(function (f) { f.addEventListener('click', function () { open(vis().indexOf(f)); }); });
     $('.x', lb).addEventListener('click', function () { lb.classList.remove('open'); });

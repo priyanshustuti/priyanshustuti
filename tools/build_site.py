@@ -31,6 +31,22 @@ SPRITE = '''<svg width="0" height="0" style="position:absolute" aria-hidden="tru
 <symbol id="i-gem" viewBox="0 0 48 48"><path d="M13 7h22l8 11-19 23L5 18z" fill="none" stroke-width="2" stroke-linejoin="round"/><path d="M5 18h38M17 7l-4 11 11 23 11-23-4-11" fill="none" stroke-width="2" stroke-linejoin="round"/></symbol>
 </svg>'''
 
+ART = '''<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="a-consult" viewBox="0 0 96 96"><rect x="20" y="16" width="44" height="60" rx="5"/><rect x="32" y="9" width="20" height="13" rx="3"/><path d="M29 38h26M29 49h26M29 60h14"/><path class="gd" d="M27 36l2 2 3-4z"/><circle class="ac" cx="64" cy="62" r="14"/><path class="ac" d="M74 72l13 13"/><path class="ac" d="M58 62l4 4 7-8"/></symbol>
+<symbol id="a-cash" viewBox="0 0 96 96"><rect x="22" y="44" width="46" height="34" rx="6"/><path d="M31 44V33a14 14 0 0 1 28 0v11"/><circle class="gd" cx="45" cy="59" r="4.5"/><path d="M45 63v8"/><path class="ac" d="M72 84h10M66 78a14 5 0 0 0 28 0M66 70a14 5 0 0 0 28 0"/><ellipse class="ac" cx="80" cy="62" rx="14" ry="5"/><path class="ac" d="M66 62v16M94 62v16"/></symbol>
+<symbol id="a-office" viewBox="0 0 96 96"><rect x="14" y="30" width="34" height="46" rx="3"/><path d="M21 42h20M21 52h20M21 62h12"/><path class="ac" d="M56 50h24v16a12 12 0 0 1-24 0z"/><path class="ac" d="M80 54h3a5 5 0 0 1 0 10h-3"/><path class="gd" d="M63 40c-4-4 3-6-1-11M72 40c-4-4 3-6-1-11" style="fill:none;stroke:var(--gold)"/><path d="M8 84h80"/></symbol>
+<symbol id="a-patient" viewBox="0 0 96 96"><path class="gd" d="M48 54C30 42 26 30 34 22c6-6 14-3 14 4 0-7 8-10 14-4 8 8 4 20-14 32z" style="fill:none;stroke:var(--gold)"/><path class="ac" d="M8 64h16v20H8zM24 68l14-4h22a6 6 0 0 1 0 12H40M60 70l16-8a5 5 0 0 1 6 8L62 84H24"/></symbol>
+<symbol id="a-home" viewBox="0 0 96 96"><path d="M10 48 48 14l38 34M20 42v38h56V42"/><path class="ac" d="M48 72c-11-7-15-14-10-19 4-4 10-2 10 3 0-5 6-7 10-3 5 5 1 12-10 19z"/><path d="M8 84h80"/></symbol>
+<symbol id="a-facade" viewBox="0 0 96 96"><rect x="18" y="12" width="36" height="70"/><path d="M26 22h8M40 22h8M26 34h8M40 34h8M26 46h8M40 46h8M26 58h8M40 58h8M34 82V70h8v12"/><path class="gd" d="M72 14l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/><path class="ac" d="M62 70l18-18M76 46l12 12"/><path d="M10 84h76"/></symbol>
+<symbol id="a-pest" viewBox="0 0 96 96"><ellipse cx="48" cy="54" rx="11" ry="16"/><circle cx="48" cy="34" r="6"/><path d="M44 29l-6-9M52 29l6-9M37 48l-12-6M37 57H23M38 66l-12 8M59 48l12-6M59 57h14M58 66l12 8M48 42v28"/><circle class="ac" cx="48" cy="48" r="40"/><path class="rd" d="M20 76 76 20" style="stroke:var(--red-2);stroke-width:4;fill:none"/></symbol>
+<symbol id="a-land" viewBox="0 0 96 96"><circle cx="48" cy="36" r="24"/><path d="M48 84V52M48 60l-12-10M48 68l12-12"/><path class="ac" d="M14 84h68M16 84c0-9 5-13 11-15 0 9-4 13-11 15zM80 84c0-9-5-13-11-15 0 9 4 13 11 15z"/><path class="gd" d="M36 30l6 4M56 24l-6 6" style="stroke:var(--gold)"/></symbol>
+<symbol id="a-mech" viewBox="0 0 96 96"><circle cx="48" cy="48" r="28" stroke-width="9" stroke-dasharray="9.4 12.1" stroke-linecap="butt" stroke-linejoin="miter"/><circle cx="48" cy="48" r="21"/><circle cx="48" cy="48" r="8"/><path class="ac" d="M80 10v14M73 17h14M75 12l10 10M85 12 75 22"/></symbol>
+<symbol id="a-elec" viewBox="0 0 96 96"><path d="M55 8 27 54h19l-5 34 28-48H50z"/><circle class="ac" cx="48" cy="48" r="42" stroke-dasharray="3 7"/><path class="gd" d="M20 20l4 4M76 72l4 4M76 20l-4 4M20 76l4-4" style="stroke:var(--gold)"/></symbol>
+<symbol id="a-plumb" viewBox="0 0 96 96"><path d="M12 24h34a14 14 0 0 1 14 14v38"/><path d="M12 38h20a4 4 0 0 1 4 4v34"/><rect x="54" y="76" width="18" height="8" rx="2"/><rect x="30" y="76" width="18" height="8" rx="2"/><path class="ac" d="M76 22c-6 8-9 12-9 16a9 9 0 0 0 18 0c0-4-3-8-9-16z"/></symbol>
+<symbol id="a-fire" viewBox="0 0 96 96"><path d="M48 8c4 14 20 22 20 40a20 20 0 0 1-40 0c0-10 6-15 10-24 2 6 4 8 8 8-1-8-3-14 2-24z"/><path class="ac" d="M48 86a9 9 0 0 1-9-9c0-7 6-9 9-18 5 7 9 11 9 18a9 9 0 0 1-9 9z"/></symbol>
+<symbol id="a-stp" viewBox="0 0 96 96"><rect x="12" y="36" width="72" height="48" rx="4"/><path d="M28 36V22h40v14"/><path class="ac" d="M20 58q7-7 14 0t14 0 14 0 14 0M20 72q7-7 14 0t14 0 14 0 14 0"/><path class="gd" d="M48 6c-5 7-8 10-8 14a8 8 0 0 0 16 0c0-4-3-7-8-14z" style="stroke:var(--gold)"/></symbol>
+<symbol id="a-support" viewBox="0 0 96 96"><path d="M20 54a28 28 0 0 1 56 0"/><rect x="13" y="52" width="11" height="20" rx="4"/><rect x="72" y="52" width="11" height="20" rx="4"/><path class="ac" d="M77 72c0 11-9 15-25 15"/><circle class="gd" cx="50" cy="87" r="3.5" style="stroke:var(--gold)"/></symbol>
+</svg>'''
 NAV = [('index.html', 'Home', 'home'), ('about.html', 'About Us', 'about'), ('SERVICES', 'Our Services', 'services'),
        ('gallery.html', 'Gallery', 'gallery'), ('contact.html', 'Contact Us', 'contact')]
 
@@ -54,6 +70,7 @@ def head(title, desc, page):
 <a class="skip" href="#main">Skip to content</a>
 <div class="progress" aria-hidden="true"></div>
 {SPRITE}
+{ART}
 <div class="topbar"><div class="wrap topbar__in">
 <div class="social" aria-label="Social media"><a href="#" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a><a href="#" aria-label="X (Twitter)"><svg><use href="#i-x"/></svg></a><a href="#" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a></div>
 <div class="topbar__contact"><a href="tel:{PHONE_T}"><svg><use href="#i-phone"/></svg><span>{PHONE}</span></a><a href="mailto:{MAIL}"><svg><use href="#i-mail"/></svg><span>{MAIL}</span></a></div>
@@ -141,7 +158,7 @@ home += f'''
 <div class="hero__copy">
 <span class="eyebrow eyebrow--gold reveal">Welcome to USMS PVT LTD</span>
 <h1 class="reveal">Your Trusted <em>Maintenance</em> Solution Provider</h1>
-<p class="lead hero__lead reveal">At USMS, we are dedicated to providing comprehensive and reliable services in the areas of security, facility management, and maintenance. With our team of highly trained professionals and years of industry experience, we strive to deliver top-notch solutions tailored to your specific needs.</p>
+<p class="lead hero__lead reveal">At USMS we deliver comprehensive, reliable security, facility management and maintenance services. Backed by highly trained professionals and years of industry experience, we build top-notch solutions around your specific needs.</p>
 <div class="hero__actions reveal"><a class="btn btn--red" href="contact.html">Enquire Now <svg><use href="#i-arrow"/></svg></a><a class="btn btn--ghost" href="#services">Explore Services</a></div>
 <ul class="stats reveal"><li><b data-count="4">4</b><span>States of operation</span></li><li><b data-count="9">9</b><span>Sectors served</span></li><li><b data-count="3">3</b><span>Service verticals</span></li></ul>
 </div>
@@ -160,17 +177,17 @@ home += f'''
 <header class="sec-head reveal"><span class="eyebrow">What we do</span><h2>Our <em>Services</em></h2><p>Experience peace of mind with our trusted services tailored to your specific needs.</p></header>
 <div class="panels reveal">
 <article class="panel active" data-href="security.html" tabindex="0"><div class="panel__bg" style="background-image:url(assets/img/hero/1.webp)"></div><span class="panel__no">01</span><svg class="panel__icon"><use href="#i-shield"/></svg>
-<div class="panel__body"><h3>Security</h3><div class="panel__more"><p>Our security services are designed to provide you with peace of mind and ensure the safety of your premises. From highly trained security guards to advanced technology solutions, we offer a comprehensive range of security services tailored to your specific needs.</p><a class="link" href="security.html">Know More <svg><use href="#i-arrow"/></svg></a></div></div></article>
+<div class="panel__body"><h3>Security</h3><div class="panel__more"><p>Peace of mind, built into every post. From highly trained security guards to advanced technology solutions, our security services are designed around the specific needs of your premises.</p><a class="link" href="security.html">Know More <svg><use href="#i-arrow"/></svg></a></div></div></article>
 <article class="panel" data-href="facility.html" tabindex="0"><div class="panel__bg" style="background-image:url(assets/img/hero/4.webp)"></div><span class="panel__no">02</span><svg class="panel__icon"><use href="#i-building"/></svg>
-<div class="panel__body"><h3>Facility</h3><div class="panel__more"><p>Our facility management services are geared towards creating a comfortable and well-maintained environment for your premises. From professional housekeeping to pest control and landscaping, we strive to enhance the overall experience of your facility, making it a pleasant place for everyone.</p><a class="link" href="facility.html">Know More <svg><use href="#i-arrow"/></svg></a></div></div></article>
-<article class="panel" data-href="maintenance.html" tabindex="0"><div class="panel__bg" style="background-image:url(assets/img/svc/electrical.webp)"></div><span class="panel__no">03</span><svg class="panel__icon"><use href="#i-wrench"/></svg>
-<div class="panel__body"><h3>Maintenance</h3><div class="panel__more"><p>Our maintenance services are aimed at keeping your infrastructure in optimal condition. Whether it’s mechanical, electrical, plumbing, or fire and safety systems, our team of experts provides reliable maintenance solutions to ensure the smooth operation of your facility. We also specialize in the maintenance of sewage treatment plants (STP) and water treatment plants (WTP).</p><a class="link" href="maintenance.html">Know More <svg><use href="#i-arrow"/></svg></a></div></div></article>
+<div class="panel__body"><h3>Facility</h3><div class="panel__more"><p>A comfortable, well-maintained environment for your premises. From professional housekeeping to pest control and landscaping, we enhance the overall experience of your facility and make it a pleasant place for everyone.</p><a class="link" href="facility.html">Know More <svg><use href="#i-arrow"/></svg></a></div></div></article>
+<article class="panel" data-href="maintenance.html" tabindex="0"><div class="panel__bg panel__bg--art"><svg viewBox="0 0 96 96" aria-hidden="true"><use href="#a-mech"/></svg></div><span class="panel__no">03</span><svg class="panel__icon"><use href="#i-wrench"/></svg>
+<div class="panel__body"><h3>Maintenance</h3><div class="panel__more"><p>Keep your infrastructure in optimal condition. Whether it’s mechanical, electrical, plumbing, or fire and safety systems, our experts provide reliable maintenance for the smooth operation of your facility — including sewage treatment plants (STP) and water treatment plants (WTP).</p><a class="link" href="maintenance.html">Know More <svg><use href="#i-arrow"/></svg></a></div></div></article>
 </div></div></section>
 
 <section class="section section--ivory" id="about"><div class="wrap about">
 <div class="about__visual reveal" aria-hidden="true"><div class="about__year">2012</div><img class="about__emblem" src="assets/img/emblem.png" alt="" width="210" height="170"></div>
 <div class="about__copy reveal"><span class="eyebrow">Who We Are</span><h2 class="h2">About <em>Us</em></h2>
-<p>USMS Pvt. Ltd. is a leading Integrated Facility Management services provider, delivering tailored solutions since 2012. With a strong network across multiple states, we prioritize operational excellence, sustainability, and client commitment. Our dedicated team upholds core values of discipline, transparency, and mutual respect to ensure high-quality security, facility, and maintenance services for various industries and sectors.</p>
+<p>USMS Pvt. Ltd. is a leading Integrated Facility Management services provider, delivering tailored solutions since 2012. With a strong network across multiple states, we put operational excellence, sustainability and client commitment first. Our dedicated team upholds the core values of discipline, transparency and mutual respect to deliver high-quality security, facility and maintenance services across industries and sectors.</p>
 <ul class="chips"><li>Discipline</li><li>Transparency</li><li>Mutual Respect</li></ul>
 <a class="btn btn--primary" href="about.html">Know More <svg><use href="#i-arrow"/></svg></a></div>
 </div></section>
@@ -181,7 +198,7 @@ home += f'''
 </div></section>
 
 <section class="section" id="team"><div class="wrap">
-<header class="sec-head sec-head--center reveal"><span class="eyebrow">The people</span><h2>Our <em>Team</em></h2><p>At USMS, we have a dedicated and skilled team of professionals who are committed to providing the highest level of service to our clients. Our team consists of experts in various fields, including security, facility management, and maintenance. Each team member brings a wealth of knowledge and experience to ensure that we deliver exceptional results. Get to know some of our key team members below:</p></header>
+<header class="sec-head sec-head--center reveal"><span class="eyebrow">The people</span><h2>Our <em>Team</em></h2><p>At USMS, a dedicated and skilled team of professionals is committed to giving our clients the highest level of service. Our experts span security, facility management and maintenance, and each team member brings a wealth of knowledge and experience to deliver exceptional results. Meet some of our key team members below.</p></header>
 <p class="team__label eyebrow reveal" style="display:flex;justify-content:center">Management Team</p>
 <div class="people">
 <figure class="person reveal"><div class="person__photo"><img src="assets/img/team/ms-chauhan.webp" alt="M S Chauhan" width="399" height="450" loading="lazy"></div><figcaption><strong>M S Chauhan</strong><span>Director</span></figcaption></figure>
@@ -200,6 +217,7 @@ home += FOOT
 write('index.html', home)
 
 # ============================== ABOUT ==============================
+SECTORS = ['Telecom industries', 'Manufacturing units', 'Residential townships', 'Retail malls', 'Commercial buildings', 'Hospitals', 'Banks', 'Educational institutes', 'Construction sites']
 about = head('About Us – USMS Pvt Ltd', 'USMS stands for Uniquely Security and Management Solutions, established in 2012 by a retired senior police officer.', 'about')
 about += f'''
 <section class="phero"><div class="phero__bg" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
@@ -207,17 +225,17 @@ about += f'''
 <nav class="crumbs reveal" aria-label="Breadcrumb"><a href="index.html">Home</a><i></i><span>About Us</span></nav>
 <span class="eyebrow eyebrow--gold reveal">Uniquely Security and Management Solutions</span>
 <h1 class="reveal">About <em>Us</em></h1>
-<p class="lead reveal">USMS stands for Uniquely Security and Management Solutions, established in 2012 by a retired senior police officer.</p></div>
-<div class="reveal"><div class="frame phero__frame"><div class="frame__in"><img src="assets/img/hero/6.webp" alt="USMS guards standing in formation on a parade ground under trees" width="1200" height="801"></div></div></div>
+<p class="lead reveal">USMS stands for Uniquely Security and Management Solutions — established in 2012 by a retired senior police officer.</p></div>
+<div class="reveal"><div class="frame phero__frame"><div class="frame__in"><img src="assets/img/gallery/full/01.webp" alt="USMS guards standing in formation on a parade ground under trees" width="1600" height="1068"></div></div></div>
 </div></section>
 
 <section class="section"><div class="wrap story">
-<div class="reveal"><p class="story__lead">USMS Pvt. Ltd. is one of the fastest leading <em>Integrated Facility Management</em> services providers who offers the meticulously crafted and comprehensive services tailored as per specific needs.</p></div>
+<div class="reveal"><p class="story__lead">USMS Pvt. Ltd. is one of the leading <em>Integrated Facility Management</em> providers — offering meticulously crafted, comprehensive services tailored to your specific needs.</p></div>
 <ul class="story__pts">
-<li class="reveal"><span>01</span><p>Over the years, we have been successfully serving a wide range of operations including telecom industries, manufacturing units, residential townships, retail mall, commercial buildings, hospitals, bankings, educational Institutes, construction sites.</p></li>
-<li class="reveal"><span>02</span><p>Our primary focus is to deliver effective solutions that are both efficient and affordable through operational excellence, commercial prudence, Sustainability and highest standard.</p></li>
-<li class="reveal"><span>03</span><p>Since inception USMS has expanded its footprint and established a robust network spanning Madhya Pradesh, Chhattisgarh, Uttar Pradesh, and Rajasthan and upheld the highest level of commitment through quality service in security, facility &amp; maintenance to our clients.</p></li>
-<li class="reveal"><span>04</span><p>Our dedicated team of professionals adhere to fundamental principles of discipline, attitude, and commitment and form a strong relationship through transparency, trust and mutual respect that are integral to our core value system.</p></li>
+<li class="reveal"><span>01</span><p>Over the years we have successfully served a wide range of operations, including telecom industries, manufacturing units, residential townships, retail malls, commercial buildings, hospitals, banks, educational institutes and construction sites.</p></li>
+<li class="reveal"><span>02</span><p>Our primary focus is to deliver solutions that are both efficient and affordable — through operational excellence, commercial prudence, sustainability and the highest standards.</p></li>
+<li class="reveal"><span>03</span><p>Since inception, USMS has expanded its footprint and built a robust network across Madhya Pradesh, Chhattisgarh, Uttar Pradesh and Rajasthan, upholding the highest level of commitment through quality security, facility and maintenance services.</p></li>
+<li class="reveal"><span>04</span><p>Our dedicated team of professionals adheres to the fundamental principles of discipline, attitude and commitment, and builds strong relationships through transparency, trust and mutual respect — the core of our value system.</p></li>
 </ul></div></section>
 
 <section class="section section--dark"><div class="wrap">
@@ -227,15 +245,15 @@ about += f'''
 
 <section class="section section--ivory"><div class="wrap">
 <header class="sec-head reveal"><span class="eyebrow">Industries</span><h2>Sectors we <em>serve</em></h2></header>
-<ol class="sectors reveal">{''.join(f'<li><span>{i:02d}</span><b>{n}</b></li>' for i, n in enumerate(['Telecom industries', 'Manufacturing units', 'Residential townships', 'Retail malls', 'Commercial buildings', 'Hospitals', 'Banks', 'Educational institutes', 'Construction sites'], 1))}</ol>
+<ol class="sectors reveal">{''.join(f'<li><span>{i:02d}</span><b>{n}</b></li>' for i, n in enumerate(SECTORS, 1))}</ol>
 </div></section>
 
 <section class="section section--dark"><div class="wrap">
 <header class="sec-head sec-head--center reveal"><span class="eyebrow eyebrow--gold">What guides us</span><h2>Mission, vision <em>&amp; value</em></h2></header>
 <div class="mvv">
-<article class="reveal"><svg><use href="#i-target"/></svg><h3>Our Mission</h3><p>USMS mission is to be the leading one-stop-solutions for client and exceed their specific and customised service needs by delivering the highest quality of professional services with trust and confidence.</p></article>
-<article class="reveal"><svg><use href="#i-eye"/></svg><h3>Our Vision</h3><p>USMS vision is to be the most professional leader among services provider industry by exceeding our customers expectations creating trustworthy partnership with client and value every employee.</p></article>
-<article class="reveal"><svg><use href="#i-gem"/></svg><h3>Our Value</h3><p>USMS value trustworthy partnership, integrity, quality service, professional growth and community leadership</p></article>
+<article class="reveal"><svg><use href="#i-target"/></svg><h3>Our Mission</h3><p>To be the leading one-stop solutions provider for our clients — exceeding their specific, customised service needs by delivering the highest quality of professional services with trust and confidence.</p></article>
+<article class="reveal"><svg><use href="#i-eye"/></svg><h3>Our Vision</h3><p>To be the most professional leader among service providers by exceeding customer expectations, building trustworthy partnerships with our clients, and valuing every employee.</p></article>
+<article class="reveal"><svg><use href="#i-gem"/></svg><h3>Our Value</h3><p>We value trustworthy partnership, integrity, quality service, professional growth and community leadership.</p></article>
 </div></div></section>
 {cta()}
 '''
@@ -244,13 +262,19 @@ write('about.html', about)
 
 
 # ============================== SERVICE PAGES ==============================
-def block(i, title, anchor, text, img, alt, kind=''):
-    cls = {'': '', 'tall': ' block__media--tall', 'art': ' block__media--art'}[kind]
-    return f'''<article class="block" id="{anchor}"><div class="reveal"><span class="block__no">{i:02d}</span><h2>{title}</h2>{text}</div>
-<div class="block__media{cls} reveal"><div class="frame frame--light"><div class="frame__in"><img src="{img}" alt="{alt}" loading="lazy"></div></div></div></article>'''
+def media(img, alt):
+    if img.startswith('art:'):
+        return f'<div class="art" role="img" aria-label="{alt}"><svg viewBox="0 0 96 96" aria-hidden="true"><use href="#{img[4:]}"/></svg></div>'
+    return f'<img src="{img}" alt="{alt}" loading="lazy">'
 
 
-def svc_page(page, title, eyebrow, h1, intro, hero_img, hero_alt, blocks, icon, extra_top='', lead_html=None):
+def block(i, title, anchor, text, img, alt, kind='', extra=''):
+    cls = {'': '', 'tall': ' block__media--tall'}[kind]
+    return f'''<article class="block" id="{anchor}"><div class="reveal"><span class="block__no">{i:02d}</span><h2>{title}</h2><p>{text}</p></div>
+<div class="block__media{cls} reveal"><div class="frame frame--light"><div class="frame__in">{media(img, alt)}</div></div>{extra}</div></article>'''
+
+
+def svc_page(page, title, eyebrow, h1, intro, hero, blocks, extra_top=''):
     p = head(title, intro, page)
     toc = ''.join(f'<a href="#{b[2]}"><span>{b[0]:02d}</span>{b[1]}</a>' for b in blocks)
     glance = ''.join(f'<a href="#{b[2]}">{b[1]}</a>' for b in blocks)
@@ -262,7 +286,7 @@ def svc_page(page, title, eyebrow, h1, intro, hero_img, hero_alt, blocks, icon, 
 <span class="eyebrow eyebrow--gold reveal">{eyebrow}</span>
 <h1 class="reveal">{h1.split()[0]} <em>{' '.join(h1.split()[1:])}</em></h1>
 <p class="lead reveal">{intro}</p></div>
-<div class="reveal"><div class="frame phero__frame"><div class="frame__in"><img src="{hero_img}" alt="{hero_alt}" width="1200" height="801"></div></div></div>
+<div class="reveal"><div class="frame phero__frame"><div class="frame__in">{hero}</div></div></div>
 </div></section>
 
 <section class="section"><div class="wrap">
@@ -275,38 +299,46 @@ def svc_page(page, title, eyebrow, h1, intro, hero_img, hero_alt, blocks, icon, 
     return p + FOOT
 
 
+def photo(src, alt, w=1200, h=801):
+    return f'<img src="{src}" alt="{alt}" width="{w}" height="{h}">'
+
+
 security = svc_page('security', 'Security Services – USMS Pvt Ltd', 'Comprehensive Security Solutions', 'Security Services',
-    'Our security services are designed to provide you with peace of mind and ensure the safety of your premises. From highly trained security guards to advanced technology solutions, we offer a comprehensive range of security services tailored to your specific needs.',
-    'assets/img/hero/1.webp', 'Three USMS armed guards in navy uniforms standing in front of a car', [
-    (1, 'Security Guard', 'security-guard', '<p>At our security agency, we offer comprehensive security assessments for our clients. After evaluating their premises, we provide informed recommendations regarding their specific security requirements, including necessary equipment and personnel. Additionally, our training department is equipped to provide specialized training for individuals working in the retail sector. Over the year we have earned an outstanding reputation in the industry for delivering top-notch security services of guards, armed guards &amp; body guards.</p>', 'assets/img/hero/7.webp', 'Two USMS security guards and a woman guard at a hospital pharmacy entrance'),
-    (2, 'Personal Protection', 'personal-protection', '<p>We take pride in our exceptional team of young, smart, and well-groomed professionals. Our Personal Protection Officers/ Escorts are meticulously selected and trained in martial arts and combat craft. They possess fluency in both English and Hindi, enabling seamless communication with clients. Our team excels in forming cohesive units, providing immediate and close protection to individuals requiring personal security.</p>', 'assets/img/svc/personal-protection.webp', 'A USMS personal protection officer in a navy uniform', 'tall'),
-    (3, 'Armed Guard', 'armed-guard', '<p>Our agency is proud to employ a select group of exceptional individuals who embody youth, intelligence, and professionalism. These highly dedicated Personal Protection Officers/ Escorts are fluent in both English and Hindi, and their training in martial arts and combat craft ensures their readiness for any situation. By working together seamlessly, they form an unbeatable team capable of providing immediate and close protection.</p>', 'assets/img/svc/armed-guard.webp', 'A USMS armed guard holding a rifle', 'tall'),
-    (4, 'Security Consultancy', 'security-consultancy', '<p>We specialize in conducting comprehensive security surveys and appreciation for our esteemed clients. Our experienced team thoroughly assesses the existing security measures and identifies potential vulnerabilities. Based on our findings, we provide tailored advice and recommendations on a wide range of security needs, including equipment and manpower requirements necessary to enhance overall safety and protection.</p>', 'assets/img/svc/consultancy.webp', 'Two professionals shaking hands over a contract'),
-    (5, 'Cash Management', 'cash-management', '<p>USMS offers security guard cash handling services to ensure the utmost safety and protection of your valuable assets. Our highly trained and professional guards are well-versed in handling cash transactions, adhering to strict protocols and security measures. They possess a deep understanding of risk management and equipped with necessary skills to detect and deter potential threats. They are reliable and proficient in secure cash transportation.</p>', 'assets/img/svc/cash-van.webp', 'Illustration of a bank cash van with a guard', 'art'),
-    ], 'i-shield')
+    'Peace of mind, built into every post. From highly trained guards to advanced technology solutions, our security services are designed around the specific needs of your premises.',
+    photo('assets/img/hero/1.webp', 'Three USMS armed guards in navy uniforms standing in front of a car'), [
+    (1, 'Security Guard', 'security-guard', 'We begin with a comprehensive security assessment of your premises, then recommend the equipment and personnel you actually need. Our training department also provides specialised training for people working in the retail sector. Over the years we have earned an outstanding reputation for top-notch security — from guards and armed guards to bodyguards.', 'assets/img/gallery/full/11.webp', 'Two USMS security guards and a woman guard at a hospital pharmacy entrance'),
+    (2, 'Personal Protection', 'personal-protection', 'Our Personal Protection Officers and escorts are young, smart and well-groomed professionals, carefully selected and trained in martial arts and combat craft. Fluent in both English and Hindi, they communicate seamlessly with clients — and they work as cohesive units, providing immediate, close protection to anyone who needs personal security.', 'assets/img/svc/personal-protection.webp', 'A USMS personal protection officer in a navy uniform', 'tall'),
+    (3, 'Armed Guard', 'armed-guard', 'Our armed guards are a select group of dedicated, intelligent and professional individuals. Trained in martial arts and combat craft and fluent in English and Hindi, they are ready for any situation — and, working together seamlessly, they provide immediate, close protection.', 'assets/img/svc/armed-guard.webp', 'A USMS armed guard holding a rifle', 'tall'),
+    (4, 'Security Consultancy', 'security-consultancy', 'We conduct comprehensive security surveys and appraisals for our clients. Our experienced team assesses your existing security measures and identifies potential vulnerabilities — then, based on the findings, gives tailored advice on equipment and manpower to strengthen overall safety and protection.', 'art:a-consult', 'Illustration of a clipboard checklist and a magnifying glass'),
+    (5, 'Cash Management', 'cash-management', 'USMS provides security guard cash-handling services to keep your valuable assets safe. Our trained, professional guards follow strict protocols, understand risk management, and have the skills to detect and deter threats. They are reliable and proficient in secure cash transportation.', 'art:a-cash', 'Illustration of a padlock and a stack of coins'),
+    ])
 write('security.html', security)
 
+hk_extra = '<div class="strip3">' + ''.join(f'<img src="assets/img/gallery/{n}.webp" alt="USMS housekeeping staff at work in a hospital" loading="lazy">' for n in ('19', '21', '23')) + '</div>'
 facility = svc_page('facility', 'Facility Services – USMS Pvt Ltd', 'Enhancing Your Facility Experience', 'Facility Services',
-    'Our facility management services are geared towards creating a comfortable and well-maintained environment for your premises. From professional housekeeping to pest control and landscaping, we strive to enhance the overall experience of your facility, making it a pleasant place for everyone.',
-    'assets/img/hero/4.webp', 'USMS housekeeping and support staff lined up in a hospital corridor', [
-    (1, 'House Keeping', 'house-keeping', '<p>USMS provides top-notch housekeeping services to ensure a clean and organized environment for our clients. Our team of dedicated professionals is committed to delivering exceptional cleaning solutions tailored to the unique needs of each client. From dusting and vacuuming to disinfecting and sanitizing, we strive to maintain the highest standards of cleanliness. With meticulous attention to detail, we leave no corner untouched, ensuring that every room is pristine and inviting. Our comprehensive housekeeping service guarantees a fresh and comfortable space, allowing our clients to focus on their core activities with peace of mind.</p>', 'assets/img/hero/5.webp', 'A USMS housekeeping staff member mopping a hospital laboratory floor'),
-    (2, 'Office Boy', 'office-boy', '<p>Our Office Boy service is designed to cater to your administrative needs, ensuring a smooth and efficient work environment. Our dedicated and professional Office Boys are trained to handle various tasks such as document management, mail handling, inventory management, and general office upkeep. With their attention to detail and excellent organizational skills, they will ensure that your office operations run seamlessly, allowing you to focus on your core business activities.</p>', 'assets/img/svc/office-boy.webp', 'A smiling office attendant carrying a tray'),
-    (3, 'Patience Care Service', 'patience-care', '<p>At USMS, we understand the importance of providing compassionate and personalized care for your loved ones. Our Patience Care service offers professional caregivers who are experienced in assisting individuals with patience and empathy. Whether it’s elderly care, post-surgery recovery, or special needs assistance, our caregivers are trained to provide the highest level of care and support. They will ensure the comfort, well-being, and safety of your loved ones, allowing you to have peace of mind knowing that they are in capable hands.</p>', 'assets/img/svc/patient-care.webp', 'A caregiver holding the hands of an elderly patient'),
-    (4, 'Home Care', 'home-care', '<p>Our Home Care service provides personalized care in the comfort of your own home. Our caregivers assist with daily activities, medication management, meal preparation, and companionship, promoting independence and enhancing quality of life.</p>', 'assets/img/svc/home-care.webp', 'Two home care staff working in a kitchen'),
-    (5, 'Façade Cleaning', 'facade-cleaning', '<p>USMS specializes in providing top-quality facade cleaning services that ensure the immaculate appearance and longevity of your building’s exterior. With a team of skilled professionals equipped with state-of-the-art equipment and environmentally friendly cleaning agents, we offer comprehensive solutions for removing dirt, grime, stains, and pollutants from all types of facades. Our meticulous approach guarantees a thorough and efficient cleaning process, leaving your building looking pristine and revitalized. From high-rise buildings to residential complexes. Trust us to enhance the visual appeal of your property while preserving its structural integrity through our expert facade cleaning solutions.</p>', 'assets/img/svc/facade.webp', 'A technician cleaning a building facade on ropes'),
-    (6, 'Pest Control', 'pest-control', '<p>USMS specializes in comprehensive pest control solutions tailored to meet the unique needs of our clients. With a team of highly skilled and experienced professionals, we employ cutting-edge techniques and environmentally friendly products to effectively eradicate pests and ensure long-lasting protection. Whether it’s termites, rodents, bed bugs, or any other pests, we take a proactive approach by conducting thorough inspections, implementing targeted treatments, and providing ongoing monitoring to prevent future infestations. Our commitment to customer satisfaction, coupled with our commitment to the environment, makes us the go-to choice for reliable and sustainable pest control services.</p>', 'assets/img/svc/pest-control.webp', 'A pest control technician in protective gear spraying'),
-    (7, 'Landscaping', 'landscaping', '<p>USMS specializes in providing exceptional horticultural services to our valued clients. With a dedicated team of experienced professionals, we offer a comprehensive range of services designed to enhance the beauty and vitality of your outdoor spaces. Whether you require landscape design and installation, regular garden maintenance, or plant care and pruning, we have the expertise and passion to bring your vision to life. From private residences to commercial properties, we tailor our horticultural solutions to meet the unique needs and preferences of each client. With a commitment to sustainability and environmentally friendly practices, we ensure that our services promote the health and longevity of your plants and gardens. We strive to create stunning and sustainable outdoor environments that will delight and inspire you for years to come.</p>', 'assets/img/svc/landscaping.webp', 'A gardener trimming a hedge with shears'),
-    ], 'i-building',
-    extra_top='<figure class="banner reveal"><div class="frame frame--light"><div class="frame__in"><img src="assets/img/svc/facility-team.webp" alt="The USMS facility team lined up in uniform" loading="lazy"></div></div></figure>')
+    'A comfortable, well-maintained environment for your premises. From professional housekeeping to pest control and landscaping, we enhance the overall experience of your facility and make it a pleasant place for everyone.',
+    photo('assets/img/gallery/full/15.webp', 'USMS housekeeping and support staff lined up in a hospital corridor', 1600, 1068), [
+    (1, 'House Keeping', 'house-keeping', 'USMS provides top-notch housekeeping that keeps your premises clean, organised and welcoming. Our dedicated team tailors its cleaning to each client’s needs — from dusting and vacuuming to disinfecting and sanitising — with meticulous attention to detail, so no corner is left untouched. The result is a fresh, comfortable space that lets you focus on your core activities with peace of mind.', 'assets/img/gallery/full/22.webp', 'A USMS housekeeping staff member mopping a hospital laboratory floor', '', hk_extra),
+    (2, 'Office Boy', 'office-boy', 'Our Office Boy service supports your administrative needs and keeps your workplace running smoothly. Our dedicated, professional staff are trained in document management, mail handling, inventory management and general office upkeep — so you can focus on your core business.', 'art:a-office', 'Illustration of a document stack and a cup of tea'),
+    (3, 'Support Services', 'support-services', 'From receptionists to administrative staff, we provide a range of support services that assist your day-to-day operations.', 'art:a-support', 'Illustration of a support headset'),
+    (4, 'Patience Care Service', 'patience-care', 'We understand how important compassionate, personalised care is for your loved ones. Our caregivers are experienced in assisting people with patience and empathy — whether it’s elderly care, post-surgery recovery or special-needs assistance — and are trained to ensure comfort, well-being and safety, so you can rest easy knowing your loved ones are in capable hands.', 'art:a-patient', 'Illustration of a heart held in a caring hand'),
+    (5, 'Home Care', 'home-care', 'Personalised care in the comfort of your own home. Our caregivers assist with daily activities, medication management, meal preparation and companionship — promoting independence and improving quality of life.', 'art:a-home', 'Illustration of a house with a heart'),
+    (6, 'Façade Cleaning', 'facade-cleaning', 'We provide top-quality façade cleaning that protects the appearance and longevity of your building’s exterior. Skilled professionals with modern equipment and environmentally friendly cleaning agents remove dirt, grime, stains and pollutants from every type of façade — from high-rise buildings to residential complexes — leaving your property pristine while preserving its structural integrity.', 'art:a-facade', 'Illustration of a building facade being cleaned'),
+    (7, 'Pest Control', 'pest-control', 'We deliver comprehensive pest control tailored to each client. Our experienced professionals use cutting-edge techniques and environmentally friendly products to eradicate pests and provide lasting protection — whether it’s termites, rodents, bed bugs or anything else. Through thorough inspections, targeted treatments and ongoing monitoring, we prevent future infestations.', 'art:a-pest', 'Illustration of a bug inside a prohibited sign'),
+    (8, 'Landscaping', 'landscaping', 'We provide exceptional horticultural services that enhance the beauty and vitality of your outdoor spaces — landscape design and installation, regular garden maintenance, plant care and pruning — for private residences and commercial properties alike. Our commitment to sustainability and environmentally friendly practices promotes the health and longevity of your plants and gardens, creating outdoor environments that delight for years to come.', 'art:a-land', 'Illustration of a tree and young plants'),
+    ],
+    extra_top='<figure class="banner reveal"><div class="frame frame--light"><div class="frame__in"><img src="assets/img/gallery/full/17.webp" alt="The USMS facility team lined up in uniform" width="1600" height="1068" loading="lazy"></div></div></figure>')
 write('facility.html', facility)
 
 maintenance = svc_page('maintenance', 'Maintenance Services – USMS Pvt Ltd', 'Reliable Maintenance Solution', 'Maintenance Services',
-    'Our maintenance services are aimed at keeping your infrastructure in optimal condition. Whether it’s mechanical, electrical, plumbing, or fire and safety systems, our team of experts provides reliable maintenance solutions to ensure the smooth operation of your facility. We also specialize in the maintenance of sewage treatment plants (STP) and water treatment plants (WTP).',
-    'assets/img/svc/electrical.webp', 'An electrician testing a distribution panel', [
-    (1, 'Mechanical', 'mechanical', '<p>USMS offers a comprehensive range of mechanical services to meet the diverse needs of our clients. Our skilled technicians are proficient in delivering top-notch HVAC services, ensuring optimal performance and efficiency of air conditioning units. Whether it’s installation, maintenance, or repairs, we prioritize customer satisfaction by providing reliable and timely solutions. Additionally, our expertise extends to chiller systems, where we excel in offering professional services such as maintenance, troubleshooting, and repairs, guaranteeing uninterrupted operation and maximum efficiency. With our commitment to excellence and dedication to delivering exceptional mechanical services, we strive to create comfortable and functional environments for our valued customers.</p>', 'assets/img/svc/mechanical.webp', 'A mechanic working under the hood of a vehicle'),
-    (2, 'Electrical', 'electrical', '<p>USMS specializes in providing comprehensive electrical services to meet the diverse needs of our clients. With a team of highly skilled and certified electricians, we offer a wide range of services encompassing residential, commercial, and industrial sectors. From electrical installations and repairs to maintenance, troubleshooting, and upgrades, we ensure that our clients receive top-notch solutions that are reliable, efficient, and compliant with industry standards. Whether it’s wiring, lighting, panel upgrades, circuit installations, or electrical safety inspections, our dedicated team is committed to delivering exceptional service, ensuring the utmost satisfaction of our valued customers.</p>', 'assets/img/svc/electrical.webp', 'An electrician testing a distribution panel'),
-    (3, 'Plumbing', 'plumbing', '<p>USMS is proud to offer comprehensive plumbing services that cater to all your needs. Our highly skilled team of professional plumbers is equipped with the latest tools and techniques to handle any plumbing issue efficiently and effectively. Whether it’s a leaky faucet, a clogged drain, a burst pipe, or a complete plumbing system installation, our experts are trained to deliver exceptional results. We prioritize customer satisfaction and provide prompt and reliable service, ensuring that your plumbing systems are in optimal condition. With our commitment to quality and expertise, you can trust us to deliver exceptional plumbing solutions for your residential or commercial property.</p>', 'assets/img/svc/plumbing.webp', 'A plumber fitting a water filter'),
-    ], 'i-wrench')
+    'Keep your infrastructure in optimal condition. Whether it’s mechanical, electrical, plumbing, or fire and safety systems, our experts provide reliable maintenance for the smooth operation of your facility — including sewage treatment plants (STP) and water treatment plants (WTP).',
+    '<div class="art art--hero" role="img" aria-label="Illustration of a gear"><svg viewBox="0 0 96 96" aria-hidden="true"><use href="#a-mech"/></svg></div>', [
+    (1, 'Mechanical', 'mechanical', 'We offer a comprehensive range of mechanical services. Our skilled technicians deliver top-notch HVAC services — installation, maintenance and repair of air-conditioning units for optimal performance and efficiency — and our expertise extends to chiller systems, including maintenance, troubleshooting and repairs that keep operation uninterrupted and efficient.', 'art:a-mech', 'Illustration of a gear and a cooling symbol'),
+    (2, 'Electrical', 'electrical', 'Our highly skilled, certified electricians cover residential, commercial and industrial needs — from installations and repairs to maintenance, troubleshooting and upgrades. Whether it’s wiring, lighting, panel upgrades, circuit installation or electrical safety inspections, we deliver reliable, efficient solutions that comply with industry standards.', 'art:a-elec', 'Illustration of a lightning bolt'),
+    (3, 'Plumbing', 'plumbing', 'Our skilled plumbers use the latest tools and techniques to handle any plumbing issue efficiently — a leaking faucet, a clogged drain, a burst pipe or a complete system installation. We prioritise prompt, reliable service so your plumbing stays in optimal condition, for residential and commercial properties alike.', 'art:a-plumb', 'Illustration of a pipe and a water drop'),
+    (4, 'Fire &amp; Safety', 'fire-safety', 'Ensure the safety of your premises with our comprehensive fire and safety solutions.', 'art:a-fire', 'Illustration of a flame'),
+    (5, 'STP / WTP', 'stp-wtp', 'Our experts specialise in the maintenance of sewage treatment plants (STP) and water treatment plants (WTP).', 'art:a-stp', 'Illustration of a water treatment tank'),
+    ])
 write('maintenance.html', maintenance)
 
 # ============================== CONTACT ==============================
@@ -338,10 +370,18 @@ contact += FOOT
 write('contact.html', contact)
 
 # ============================== GALLERY ==============================
-G = [('hero/1.webp', 'Armed guards', 'security', 1200, 801), ('hero/2.webp', 'Security team', 'security', 1200, 801), ('hero/3.webp', 'At the reception desk', 'security', 1200, 801),
-     ('hero/4.webp', 'Facility team', 'facility', 1200, 801), ('hero/5.webp', 'Housekeeping', 'facility', 1200, 801), ('hero/6.webp', 'On parade', 'security', 1200, 801),
-     ('hero/7.webp', 'Guards at the pharmacy', 'security', 1200, 801), ('svc/personal-protection.webp', 'Personal protection', 'security', 277, 390),
-     ('svc/armed-guard.webp', 'Armed guard', 'security', 264, 402), ('svc/facility-team.webp', 'The facility team', 'facility', 1255, 534)]
+GAL = [(1, 'security', 'USMS guards standing in formation on a parade ground'), (2, 'security', 'USMS security team greeting with folded hands outside a hospital'),
+       (3, 'security', 'Three USMS security guards standing at attention'), (4, 'security', 'A USMS guard writing in the visitor register'),
+       (5, 'security', 'USMS guards assisting at the hospital gate'), (6, 'security', 'The USMS security team outside Shalby Hospital'),
+       (7, 'security', 'A man and woman USMS security guard'), (8, 'security', 'A USMS guard at the hospital entrance'),
+       (9, 'security', 'USMS guards assisting at the hospital gate'), (10, 'security', 'A USMS guard at the reception desk'),
+       (11, 'security', 'USMS security guards at the 24 hour pharmacy'), (12, 'security', 'A USMS guard on duty at the help desk'),
+       (13, 'security', 'Three USMS security guards in front of a notice board'), (14, 'security', 'USMS armed guards with rifles'),
+       (15, 'facility', 'The USMS facility and support team in a hospital corridor'), (16, 'facility', 'A USMS housekeeping staff member sanitising a hospital ward'),
+       (17, 'facility', 'The USMS housekeeping team lined up in uniform'), (18, 'facility', 'A USMS housekeeping staff member cleaning a hospital room'),
+       (19, 'facility', 'A USMS housekeeping staff member mopping a hospital ward'), (20, 'facility', 'A USMS housekeeping staff member mopping a hospital ward'),
+       (21, 'facility', 'A USMS housekeeping staff member cleaning a laboratory'), (22, 'facility', 'A USMS housekeeping staff member mopping a laboratory floor'),
+       (23, 'facility', 'A USMS housekeeping staff member mopping the hospital lobby')]
 gal = head('Gallery – USMS Pvt Ltd', 'Photos of the USMS security and facility teams at work.', 'gallery')
 gal += f'''
 <section class="phero phero--solo"><div class="phero__bg" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
@@ -352,7 +392,7 @@ gal += f'''
 <section class="section"><div class="wrap">
 <div class="filters reveal" role="group" aria-label="Filter photos"><button class="on" data-f="all">All</button><button data-f="security">Security</button><button data-f="facility">Facility</button></div>
 <div class="gallery">
-{''.join(f'<figure data-cat="{c}"><img src="assets/img/{f}" alt="{t}" width="{w}" height="{h}" loading="lazy"><figcaption>{t}</figcaption></figure>' for f, t, c, w, h in G)}
+{''.join(f'<figure data-cat="{c}" data-full="assets/img/gallery/full/{i:02d}.webp"><img src="assets/img/gallery/{i:02d}.webp" alt="{t}" width="640" height="427" loading="lazy"></figure>' for i, c, t in GAL)}
 </div></div></section>
 <div class="lb" role="dialog" aria-modal="true" aria-label="Photo viewer"><button class="x" aria-label="Close">✕</button><button class="pv" aria-label="Previous">‹</button><img alt=""><button class="nx" aria-label="Next">›</button></div>
 {cta()}
