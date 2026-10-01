@@ -47,6 +47,15 @@ svg{fill:currentColor;width:1em;height:1em;flex:none}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
 .progress{position:fixed;inset:0 0 auto 0;height:3px;z-index:120;background:linear-gradient(90deg,var(--red),var(--gold));transform:scaleX(0);transform-origin:left;pointer-events:none}
 
+/* classes that replace former inline styles (keeps the CSP strict) */
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+.go{fill:none;stroke:var(--gd,var(--gold))}
+.rd{fill:none;stroke:var(--red-2);stroke-width:4}
+.panel__bg--security{background-image:url(../img/hero/1.webp)}
+.panel__bg--facility{background-image:url(../img/hero/4.webp)}
+.ccard address{color:var(--muted);font-weight:600}
+.team__label{display:flex;justify-content:center}
+
 /* ---------- type helpers ---------- */
 .eyebrow{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
 .eyebrow::before{content:"";width:9px;height:9px;background:currentColor;rotate:45deg;flex:none}
