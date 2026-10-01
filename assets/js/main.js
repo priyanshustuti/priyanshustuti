@@ -51,7 +51,7 @@
     $$(':scope > li', track).forEach(function (li) {
       var c = li.cloneNode(true);
       c.setAttribute('aria-hidden', 'true');
-      var img = $('img', c); if (img) img.alt = '';
+      $$('img', c).forEach(function (im) { im.alt = ''; });
       track.appendChild(c);
     });
   });

@@ -210,7 +210,7 @@ home += f'''
 '''
 CLIENTS = [('ism-toys', 'ISM Toys'), ('bcm', 'BCM Group'), ('anand', 'Anand Hospital'), ('vyapaar', 'Vyapaar Vistaar'), ('vantage', 'Vantage'), ('unique', 'Unique Hospital'), ('shree-maruti', 'Shree Maruti'), ('shalby', 'Shalby Hospitals'), ('sankara', 'Sankara Eye Foundation, India'), ('punjab', 'Punjab Jewels'), ('prataap', 'Prataap Snacks Limited'), ('nepra', 'Nepra'), ('lifefirst', 'LifeFirst Pharma'), ('life-care-logistic', 'Life Care Logistic'), ('hnh', 'H&amp;h'), ('dp-jewellers', 'D.P. Jewellers'), ('care-chl', 'CARE CHL Hospitals')]
 def mq(items, cls=''):
-    lis = ''.join(f'<li><img src="assets/img/clients/{f}.webp" alt="{a}" loading="lazy"></li>' for f, a in items)
+    lis = ''.join(f'<li><img class="cg" src="assets/img/clients/gray/{f}.webp" alt="" loading="lazy"><img class="cc" src="assets/img/clients/{f}.webp" alt="{a}" loading="lazy"></li>' for f, a in items)
     return f'<div class="marquee {cls}" aria-label="Our valued clients"><ul class="marquee__track">{lis}</ul></div>'
 home += f'''<section class="section clients" id="clients"><div class="wrap"><header class="sec-head sec-head--center reveal"><span class="eyebrow">Trusted by</span><h2>Valued <em>Clients</em></h2></header></div>
 {mq(CLIENTS[:9])}{mq(CLIENTS[9:] + CLIENTS[:2], 'marquee--rev')}</section>
