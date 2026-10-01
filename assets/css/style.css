@@ -54,6 +54,7 @@ svg{fill:currentColor;width:1em;height:1em;flex:none}
 .panel__bg--security{background-image:url(../img/hero/1.webp)}
 .panel__bg--facility{background-image:url(../img/hero/4.webp)}
 .ccard address{color:var(--muted);font-weight:600}
+.ccard address strong{color:var(--indigo);font-weight:800}
 .team__label{display:flex;justify-content:center}
 
 /* ---------- type helpers ---------- */

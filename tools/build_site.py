@@ -10,8 +10,9 @@ import os
 OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PHONE_T, PHONE = '07314230508', '0731-4230508'
 MAIL = 'corp.uniquely@gmail.com'
-ADDR = 'J-148, LIG Colony, Behind MIG Police Station, Indore, Madhya Pradesh, 452011'
-MAPS = 'https://www.google.com/maps/search/?api=1&query=' + ADDR.replace(' ', '+')
+ADDR = 'G-55, M.I.G. Colony, behind M.I.G. Police Station, near Kankeshwari Devi School, Indore, 452011 (M.P.)'
+COMPANY = 'Uniquely Security and Management Solutions Private Limited'
+MAPS = 'https://maps.app.goo.gl/9SYsRfpvtH8vKHij6'
 
 SPRITE = '''<svg class="sprite" width="0" height="0" aria-hidden="true">
 <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
@@ -353,7 +354,7 @@ contact += f'''
 <div class="ccards">
 <a class="ccard reveal" href="tel:{PHONE_T}"><svg class="ic"><use href="#i-phone"/></svg><div><h3>Phone</h3><p>{PHONE}</p></div></a>
 <a class="ccard reveal" href="mailto:{MAIL}"><svg class="ic"><use href="#i-mail"/></svg><div><h3>Email</h3><p>{MAIL}</p></div></a>
-<div class="ccard reveal"><svg class="ic"><use href="#i-pin"/></svg><div><h3>Address</h3><address>{ADDR}</address><a class="link mapbtn" href="{MAPS}" target="_blank" rel="noopener noreferrer">Open in Maps <svg><use href="#i-arrow"/></svg></a></div></div>
+<div class="ccard reveal"><svg class="ic"><use href="#i-pin"/></svg><div><h3>Office</h3><address><strong>{COMPANY}</strong><br>{ADDR}</address><a class="link mapbtn" href="{MAPS}" target="_blank" rel="noopener noreferrer">Open in Maps <svg><use href="#i-arrow"/></svg></a></div></div>
 </div>
 <form class="form reveal" id="enquiry" method="post" action="contact.html" autocomplete="on" novalidate>
 <h2>Get in touch <em>with us</em></h2>
