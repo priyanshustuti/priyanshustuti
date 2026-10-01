@@ -1,5 +1,6 @@
 (function () {
   'use strict';
+  window.__usmsReady = true;
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -110,15 +111,19 @@
   if (panels.length) {
     var activate = function (p) { panels.forEach(function (x) { x.classList.toggle('active', x === p); }); };
     var wide = function () { return window.matchMedia('(min-width:961px)').matches; };
+    var go = function (p) {
+      var h = p.getAttribute('data-href') || '';
+      if (/^[a-z-]+\.html$/.test(h)) window.location.href = h;   // local pages only
+    };
     panels.forEach(function (p) {
       p.addEventListener('mouseenter', function () { if (wide()) activate(p); });
       p.addEventListener('focusin', function () { activate(p); });
       p.addEventListener('click', function (e) {
         if (e.target.closest('a')) return;
-        if (!wide() || p.classList.contains('active')) window.location.href = p.getAttribute('data-href');
+        if (!wide() || p.classList.contains('active')) go(p);
         else activate(p);
       });
-      p.addEventListener('keydown', function (e) { if (e.key === 'Enter') window.location.href = p.getAttribute('data-href'); });
+      p.addEventListener('keydown', function (e) { if (e.key === 'Enter') go(p); });
     });
   }
 
@@ -164,16 +169,26 @@
     });
   }
 
-  // ---- Enquiry form -> opens the visitor's email app (static site, no server) ----
+  // ---- Enquiry form -> opens the visitor's own email app (static site: nothing is sent to any server) ----
   var form = $('#enquiry');
   if (form) {
+    var clean = function (v, max) {                       // strip control chars / line breaks, trim, cap length
+      return String(v || '').replace(/[\u0000-\u001f\u007f]+/g, ' ').trim().slice(0, max);
+    };
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var note = $('.form__note', form);
-      if (!form.name.value.trim() || !form.phone.value.trim()) { note.textContent = 'Please enter your name and contact number.'; return; }
-      var body = 'Name: ' + form.name.value + '\nPhone: ' + form.phone.value + '\nEmail: ' + form.email.value +
-        '\nService: ' + form.service.value + '\n\n' + form.message.value;
-      window.location.href = 'mailto:corp.uniquely@gmail.com?subject=' + encodeURIComponent('Website enquiry – ' + form.service.value) + '&body=' + encodeURIComponent(body);
+      var f = form.elements, note = $('.form__note', form);
+      var name = clean(f.name.value, 80), phone = clean(f.phone.value, 20), email = clean(f.email.value, 120);
+      var services = ['Security', 'Facility', 'Maintenance', 'Other'];
+      var service = services.indexOf(f.service.value) > -1 ? f.service.value : 'Other';
+      var msg = String(f.message.value || '').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, '').trim().slice(0, 800);
+      if (name.length < 2) { note.textContent = 'Please enter your name.'; f.name.focus(); return; }
+      if (!/^[0-9+()\-\s]{7,20}$/.test(phone) || phone.replace(/\D/g, '').length < 7) { note.textContent = 'Please enter a valid contact number.'; f.phone.focus(); return; }
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { note.textContent = 'Please enter a valid email address or leave it blank.'; f.email.focus(); return; }
+      var body = 'Name: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nService: ' + service + '\n\n' + msg;
+      var url = 'mailto:corp.uniquely@gmail.com?subject=' + encodeURIComponent('Website enquiry - ' + service) + '&body=' + encodeURIComponent(body);
+      if (url.length > 1900) { note.textContent = 'Your message is too long — please shorten it a little.'; return; }
+      window.location.href = url;
       note.textContent = 'Opening your email app… if nothing happens, write to corp.uniquely@gmail.com.';
     });
   }

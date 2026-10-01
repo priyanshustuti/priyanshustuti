@@ -10,10 +10,11 @@ import os
 OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PHONE_T, PHONE = '07314230508', '0731-4230508'
 MAIL = 'corp.uniquely@gmail.com'
-ADDR = 'J-148, LIG Colony, Behind MIG Police Station, Indore, Madhya Pradesh, 452011'
-MAPS = 'https://www.google.com/maps/search/?api=1&query=' + ADDR.replace(' ', '+')
+ADDR = 'G-55, M.I.G. Colony, behind M.I.G. Police Station, near Kankeshwari Devi School, Indore, 452011 (M.P.)'
+COMPANY = 'Uniquely Security and Management Solutions Private Limited'
+MAPS = 'https://maps.app.goo.gl/9SYsRfpvtH8vKHij6'
 
-SPRITE = '''<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+SPRITE = '''<svg class="sprite" width="0" height="0" aria-hidden="true">
 <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
 <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.6V17h16V7.6l-8 5.4-8-5.4zM5.3 7l6.7 4.5L18.7 7H5.3z"/></symbol>
 <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
@@ -31,21 +32,21 @@ SPRITE = '''<svg width="0" height="0" style="position:absolute" aria-hidden="tru
 <symbol id="i-gem" viewBox="0 0 48 48"><path d="M13 7h22l8 11-19 23L5 18z" fill="none" stroke-width="2" stroke-linejoin="round"/><path d="M5 18h38M17 7l-4 11 11 23 11-23-4-11" fill="none" stroke-width="2" stroke-linejoin="round"/></symbol>
 </svg>'''
 
-ART = '''<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ART = '''<svg class="sprite" width="0" height="0" aria-hidden="true">
 <symbol id="a-consult" viewBox="0 0 96 96"><rect x="20" y="16" width="44" height="60" rx="5"/><rect x="32" y="9" width="20" height="13" rx="3"/><path d="M29 38h26M29 49h26M29 60h14"/><path class="gd" d="M27 36l2 2 3-4z"/><circle class="ac" cx="64" cy="62" r="14"/><path class="ac" d="M74 72l13 13"/><path class="ac" d="M58 62l4 4 7-8"/></symbol>
 <symbol id="a-cash" viewBox="0 0 96 96"><rect x="22" y="44" width="46" height="34" rx="6"/><path d="M31 44V33a14 14 0 0 1 28 0v11"/><circle class="gd" cx="45" cy="59" r="4.5"/><path d="M45 63v8"/><path class="ac" d="M72 84h10M66 78a14 5 0 0 0 28 0M66 70a14 5 0 0 0 28 0"/><ellipse class="ac" cx="80" cy="62" rx="14" ry="5"/><path class="ac" d="M66 62v16M94 62v16"/></symbol>
-<symbol id="a-office" viewBox="0 0 96 96"><rect x="14" y="30" width="34" height="46" rx="3"/><path d="M21 42h20M21 52h20M21 62h12"/><path class="ac" d="M56 50h24v16a12 12 0 0 1-24 0z"/><path class="ac" d="M80 54h3a5 5 0 0 1 0 10h-3"/><path class="gd" d="M63 40c-4-4 3-6-1-11M72 40c-4-4 3-6-1-11" style="fill:none;stroke:var(--gold)"/><path d="M8 84h80"/></symbol>
-<symbol id="a-patient" viewBox="0 0 96 96"><path class="gd" d="M48 54C30 42 26 30 34 22c6-6 14-3 14 4 0-7 8-10 14-4 8 8 4 20-14 32z" style="fill:none;stroke:var(--gold)"/><path class="ac" d="M8 64h16v20H8zM24 68l14-4h22a6 6 0 0 1 0 12H40M60 70l16-8a5 5 0 0 1 6 8L62 84H24"/></symbol>
+<symbol id="a-office" viewBox="0 0 96 96"><rect x="14" y="30" width="34" height="46" rx="3"/><path d="M21 42h20M21 52h20M21 62h12"/><path class="ac" d="M56 50h24v16a12 12 0 0 1-24 0z"/><path class="ac" d="M80 54h3a5 5 0 0 1 0 10h-3"/><path class="go" d="M63 40c-4-4 3-6-1-11M72 40c-4-4 3-6-1-11"/><path d="M8 84h80"/></symbol>
+<symbol id="a-patient" viewBox="0 0 96 96"><path class="go" d="M48 54C30 42 26 30 34 22c6-6 14-3 14 4 0-7 8-10 14-4 8 8 4 20-14 32z"/><path class="ac" d="M8 64h16v20H8zM24 68l14-4h22a6 6 0 0 1 0 12H40M60 70l16-8a5 5 0 0 1 6 8L62 84H24"/></symbol>
 <symbol id="a-home" viewBox="0 0 96 96"><path d="M10 48 48 14l38 34M20 42v38h56V42"/><path class="ac" d="M48 72c-11-7-15-14-10-19 4-4 10-2 10 3 0-5 6-7 10-3 5 5 1 12-10 19z"/><path d="M8 84h80"/></symbol>
 <symbol id="a-facade" viewBox="0 0 96 96"><rect x="18" y="12" width="36" height="70"/><path d="M26 22h8M40 22h8M26 34h8M40 34h8M26 46h8M40 46h8M26 58h8M40 58h8M34 82V70h8v12"/><path class="gd" d="M72 14l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/><path class="ac" d="M62 70l18-18M76 46l12 12"/><path d="M10 84h76"/></symbol>
-<symbol id="a-pest" viewBox="0 0 96 96"><ellipse cx="48" cy="54" rx="11" ry="16"/><circle cx="48" cy="34" r="6"/><path d="M44 29l-6-9M52 29l6-9M37 48l-12-6M37 57H23M38 66l-12 8M59 48l12-6M59 57h14M58 66l12 8M48 42v28"/><circle class="ac" cx="48" cy="48" r="40"/><path class="rd" d="M20 76 76 20" style="stroke:var(--red-2);stroke-width:4;fill:none"/></symbol>
-<symbol id="a-land" viewBox="0 0 96 96"><circle cx="48" cy="36" r="24"/><path d="M48 84V52M48 60l-12-10M48 68l12-12"/><path class="ac" d="M14 84h68M16 84c0-9 5-13 11-15 0 9-4 13-11 15zM80 84c0-9-5-13-11-15 0 9 4 13 11 15z"/><path class="gd" d="M36 30l6 4M56 24l-6 6" style="stroke:var(--gold)"/></symbol>
+<symbol id="a-pest" viewBox="0 0 96 96"><ellipse cx="48" cy="54" rx="11" ry="16"/><circle cx="48" cy="34" r="6"/><path d="M44 29l-6-9M52 29l6-9M37 48l-12-6M37 57H23M38 66l-12 8M59 48l12-6M59 57h14M58 66l12 8M48 42v28"/><circle class="ac" cx="48" cy="48" r="40"/><path class="rd" d="M20 76 76 20"/></symbol>
+<symbol id="a-land" viewBox="0 0 96 96"><circle cx="48" cy="36" r="24"/><path d="M48 84V52M48 60l-12-10M48 68l12-12"/><path class="ac" d="M14 84h68M16 84c0-9 5-13 11-15 0 9-4 13-11 15zM80 84c0-9-5-13-11-15 0 9 4 13 11 15z"/><path class="gd" d="M36 30l6 4M56 24l-6 6"/></symbol>
 <symbol id="a-mech" viewBox="0 0 96 96"><circle cx="48" cy="48" r="28" stroke-width="9" stroke-dasharray="9.4 12.1" stroke-linecap="butt" stroke-linejoin="miter"/><circle cx="48" cy="48" r="21"/><circle cx="48" cy="48" r="8"/><path class="ac" d="M80 10v14M73 17h14M75 12l10 10M85 12 75 22"/></symbol>
-<symbol id="a-elec" viewBox="0 0 96 96"><path d="M55 8 27 54h19l-5 34 28-48H50z"/><circle class="ac" cx="48" cy="48" r="42" stroke-dasharray="3 7"/><path class="gd" d="M20 20l4 4M76 72l4 4M76 20l-4 4M20 76l4-4" style="stroke:var(--gold)"/></symbol>
+<symbol id="a-elec" viewBox="0 0 96 96"><path d="M55 8 27 54h19l-5 34 28-48H50z"/><circle class="ac" cx="48" cy="48" r="42" stroke-dasharray="3 7"/><path class="gd" d="M20 20l4 4M76 72l4 4M76 20l-4 4M20 76l4-4"/></symbol>
 <symbol id="a-plumb" viewBox="0 0 96 96"><path d="M12 24h34a14 14 0 0 1 14 14v38"/><path d="M12 38h20a4 4 0 0 1 4 4v34"/><rect x="54" y="76" width="18" height="8" rx="2"/><rect x="30" y="76" width="18" height="8" rx="2"/><path class="ac" d="M76 22c-6 8-9 12-9 16a9 9 0 0 0 18 0c0-4-3-8-9-16z"/></symbol>
 <symbol id="a-fire" viewBox="0 0 96 96"><path d="M48 8c4 14 20 22 20 40a20 20 0 0 1-40 0c0-10 6-15 10-24 2 6 4 8 8 8-1-8-3-14 2-24z"/><path class="ac" d="M48 86a9 9 0 0 1-9-9c0-7 6-9 9-18 5 7 9 11 9 18a9 9 0 0 1-9 9z"/></symbol>
-<symbol id="a-stp" viewBox="0 0 96 96"><rect x="12" y="36" width="72" height="48" rx="4"/><path d="M28 36V22h40v14"/><path class="ac" d="M20 58q7-7 14 0t14 0 14 0 14 0M20 72q7-7 14 0t14 0 14 0 14 0"/><path class="gd" d="M48 6c-5 7-8 10-8 14a8 8 0 0 0 16 0c0-4-3-7-8-14z" style="stroke:var(--gold)"/></symbol>
-<symbol id="a-support" viewBox="0 0 96 96"><path d="M20 54a28 28 0 0 1 56 0"/><rect x="13" y="52" width="11" height="20" rx="4"/><rect x="72" y="52" width="11" height="20" rx="4"/><path class="ac" d="M77 72c0 11-9 15-25 15"/><circle class="gd" cx="50" cy="87" r="3.5" style="stroke:var(--gold)"/></symbol>
+<symbol id="a-stp" viewBox="0 0 96 96"><rect x="12" y="36" width="72" height="48" rx="4"/><path d="M28 36V22h40v14"/><path class="ac" d="M20 58q7-7 14 0t14 0 14 0 14 0M20 72q7-7 14 0t14 0 14 0 14 0"/><path class="gd" d="M48 6c-5 7-8 10-8 14a8 8 0 0 0 16 0c0-4-3-7-8-14z"/></symbol>
+<symbol id="a-support" viewBox="0 0 96 96"><path d="M20 54a28 28 0 0 1 56 0"/><rect x="13" y="52" width="11" height="20" rx="4"/><rect x="72" y="52" width="11" height="20" rx="4"/><path class="ac" d="M77 72c0 11-9 15-25 15"/><circle class="gd" cx="50" cy="87" r="3.5"/></symbol>
 </svg>'''
 NAV = [('index.html', 'Home', 'home'), ('about.html', 'About Us', 'about'), ('SERVICES', 'Our Services', 'services'),
        ('gallery.html', 'Gallery', 'gallery'), ('contact.html', 'Contact Us', 'contact')]
@@ -56,6 +57,8 @@ def head(title, desc, page):
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; manifest-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
@@ -64,7 +67,7 @@ def head(title, desc, page):
 <link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
-<script>document.documentElement.classList.add('js');</script>
+<script src="assets/js/init.js"></script>
 </head>
 <body data-page="{page}">
 <a class="skip" href="#main">Skip to content</a>
@@ -176,9 +179,9 @@ home += f'''
 <section class="section" id="services"><div class="wrap">
 <header class="sec-head reveal"><span class="eyebrow">What we do</span><h2>Our <em>Services</em></h2><p>Experience peace of mind with our trusted services tailored to your specific needs.</p></header>
 <div class="panels reveal">
-<article class="panel active" data-href="security.html" tabindex="0"><div class="panel__bg" style="background-image:url(assets/img/hero/1.webp)"></div><span class="panel__no">01</span><svg class="panel__icon"><use href="#i-shield"/></svg>
+<article class="panel active" data-href="security.html" tabindex="0"><div class="panel__bg panel__bg--security"></div><span class="panel__no">01</span><svg class="panel__icon"><use href="#i-shield"/></svg>
 <div class="panel__body"><h3>Security</h3><div class="panel__more"><p>Peace of mind, built into every post. From highly trained security guards to advanced technology solutions, our security services are designed around the specific needs of your premises.</p><a class="link" href="security.html">Know More <svg><use href="#i-arrow"/></svg></a></div></div></article>
-<article class="panel" data-href="facility.html" tabindex="0"><div class="panel__bg" style="background-image:url(assets/img/hero/4.webp)"></div><span class="panel__no">02</span><svg class="panel__icon"><use href="#i-building"/></svg>
+<article class="panel" data-href="facility.html" tabindex="0"><div class="panel__bg panel__bg--facility"></div><span class="panel__no">02</span><svg class="panel__icon"><use href="#i-building"/></svg>
 <div class="panel__body"><h3>Facility</h3><div class="panel__more"><p>A comfortable, well-maintained environment for your premises. From professional housekeeping to pest control and landscaping, we enhance the overall experience of your facility and make it a pleasant place for everyone.</p><a class="link" href="facility.html">Know More <svg><use href="#i-arrow"/></svg></a></div></div></article>
 <article class="panel" data-href="maintenance.html" tabindex="0"><div class="panel__bg panel__bg--art"><svg viewBox="0 0 96 96" aria-hidden="true"><use href="#a-mech"/></svg></div><span class="panel__no">03</span><svg class="panel__icon"><use href="#i-wrench"/></svg>
 <div class="panel__body"><h3>Maintenance</h3><div class="panel__more"><p>Keep your infrastructure in optimal condition. Whether it’s mechanical, electrical, plumbing, or fire and safety systems, our experts provide reliable maintenance for the smooth operation of your facility — including sewage treatment plants (STP) and water treatment plants (WTP).</p><a class="link" href="maintenance.html">Know More <svg><use href="#i-arrow"/></svg></a></div></div></article>
@@ -199,7 +202,7 @@ home += f'''
 
 <section class="section" id="team"><div class="wrap">
 <header class="sec-head sec-head--center reveal"><span class="eyebrow">The people</span><h2>Our <em>Team</em></h2><p>At USMS, a dedicated and skilled team of professionals is committed to giving our clients the highest level of service. Our experts span security, facility management and maintenance, and each team member brings a wealth of knowledge and experience to deliver exceptional results. Meet some of our key team members below.</p></header>
-<p class="team__label eyebrow reveal" style="display:flex;justify-content:center">Management Team</p>
+<p class="team__label eyebrow reveal">Management Team</p>
 <div class="people">
 <figure class="person reveal"><div class="person__photo"><img src="assets/img/team/ms-chauhan.webp" alt="M S Chauhan" width="399" height="450" loading="lazy"></div><figcaption><strong>M S Chauhan</strong><span>Director</span></figcaption></figure>
 <figure class="person reveal"><div class="person__photo"><img src="assets/img/team/gajendra-singh-chauhan.webp" alt="Gajendra Singh Chauhan" width="798" height="900" loading="lazy"></div><figcaption><strong>Gajendra Singh Chauhan</strong><span>Managing Director</span></figcaption></figure>
@@ -351,15 +354,15 @@ contact += f'''
 <div class="ccards">
 <a class="ccard reveal" href="tel:{PHONE_T}"><svg class="ic"><use href="#i-phone"/></svg><div><h3>Phone</h3><p>{PHONE}</p></div></a>
 <a class="ccard reveal" href="mailto:{MAIL}"><svg class="ic"><use href="#i-mail"/></svg><div><h3>Email</h3><p>{MAIL}</p></div></a>
-<div class="ccard reveal"><svg class="ic"><use href="#i-pin"/></svg><div><h3>Address</h3><address style="color:var(--muted);font-weight:600">{ADDR}</address><a class="link mapbtn" href="{MAPS}" target="_blank" rel="noopener">Open in Maps <svg><use href="#i-arrow"/></svg></a></div></div>
+<div class="ccard reveal"><svg class="ic"><use href="#i-pin"/></svg><div><h3>Office</h3><address><strong>{COMPANY}</strong><br>{ADDR}</address><a class="link mapbtn" href="{MAPS}" target="_blank" rel="noopener noreferrer">Open in Maps <svg><use href="#i-arrow"/></svg></a></div></div>
 </div>
-<form class="form reveal" id="enquiry" novalidate>
+<form class="form reveal" id="enquiry" method="post" action="contact.html" autocomplete="on" novalidate>
 <h2>Get in touch <em>with us</em></h2>
-<label>Your Name<input name="name" type="text" autocomplete="name" placeholder="Your Name" required></label>
-<label>Contact Number<input name="phone" type="tel" autocomplete="tel" placeholder="Contact Number" required></label>
-<label class="form__full">Email ID<input name="email" type="email" autocomplete="email" placeholder="Email ID"></label>
+<label>Your Name<input name="name" type="text" autocomplete="name" placeholder="Your Name" required minlength="2" maxlength="80"></label>
+<label>Contact Number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Contact Number" required maxlength="20"></label>
+<label class="form__full">Email ID<input name="email" type="email" autocomplete="email" placeholder="Email ID" maxlength="120"></label>
 <label class="form__full">Service<select name="service"><option>Security</option><option>Facility</option><option>Maintenance</option><option>Other</option></select></label>
-<label class="form__full">Message<textarea name="message" rows="4" placeholder="Message"></textarea></label>
+<label class="form__full">Message<textarea name="message" rows="4" placeholder="Message" maxlength="800"></textarea></label>
 <button class="btn btn--red form__full" type="submit">Submit <svg><use href="#i-arrow"/></svg></button>
 <p class="form__note form__full" role="status" aria-live="polite"></p>
 </form></div></section>
